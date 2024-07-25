@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Tells web page how to view on mobile/comp-->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--links the bootstrap css style sheet to this html page-->
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <title>My Own Email Page Design</title>
+    </head>
+<body>
+    <div class="container">
+    <!--links java script doc to this html doc-->
+    <script src="js/bootstrap.js"></script>
+    <!--most of the buttons that will be on the top or side, depending on view-->
+    <div class="pageTitle">
+        <h1>Email Bunny</h1>
+    </div>
+    <div class="row1">
+        <div class="column"><input type="button" id="inbox" value="Inbox"/></div>
+        <div class="column"><input type="button" id="sent" value="Sent"/></div>
+        <div class="column"><input type="button" id="drafts" value="Drafts"/></div>
+        <div class="column"><input type="button" id="saved" value="Saved"/></div>
+        <div class="column"><input type="button" id="trash" value="Trash"/></div>
+    </div>
+    <!--This contains the search bar for quickly finding information in/about emails-->
+<div class="row2">
+    <input type="search" id="searchBar" placeholder="Search"/>
+</div>
+<!--This contains the button to start writing a new email-->
+    <div class="row3">
+        <input type="button" id="compose" value="Compose"/>
+    </div>
+<!--This contains the list of the currently clicked on button ie:inbox -->
+<div class="row4"></div>
+<!--This contains the current email open and being read with reply, trash buttons-->
+<div class="row5"></div>
+<!--This contains the box to write emails and the send button-->
+<div class="row6"></div>
+    </div>
+</body>
+<footer></footer>
+</html>
