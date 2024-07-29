@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--Tells web page how to view on mobile/comp-->
+<!--Tells web page how to view on mobile/comp-->
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <!--links the bootstrap style sheet and css to this html page-->
+<!--links the bootstrap style sheet and css to this html page-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>My email project-Email Bunny-L.M.</title>
     </head>
 <body>
-    <div class="container text-center" id="mainContainer">
-          <!--name of the email "Company"-->
-    <h1>Email Bunny</h1>
-      <!--most of the buttons that will be on the top or side, depending on view-->
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-info btn-primary" style="--bs-btn-padding-y: 5%; --bs-btn-padding-x: 8%;" id="inbox">Inbox</button></div>
-            <button type="button" class="btn btn-info btn-primary" style="--bs-btn-padding-y: 5%; --bs-btn-padding-x: 8%;" id="sent">Sent</button></div>
-            <button type="button" class="btn btn-info btn-primary" style="--bs-btn-padding-y: 5%; --bs-btn-padding-x: 8%;" id="saved">Saved</button></div>
-            <button type="button" class="btn btn-info btn-primary" style="--bs-btn-padding-y: 5%; --bs-btn-padding-x: 8%;" id="drafts">Drafts</button></div>
-<!--trash button want to make a actual trash can not just button-->
-            <button type="button" class="btn btn-info btn-primary" style="--bs-btn-padding-y: 25%; --bs-btn-padding-x: 25%;" id="trash">
-                <img src="https://i.ibb.co/Lx4cBkf/vecteezy-pink-clothing-basket-42722716.png" class="img-fluid " alt="Trash">
-            </button>
-<!--This contains the search bar for quickly finding information in/about emails-->
+    <div class="container container-fluid" id="mainContainer">
+<!--name of the email "Company"-->
+   <div class="row" aria-hidden="true">
+        <div class="collumn" id="emailBunnyTitleBox">
+            <h1 id="emailBunnyTitle">Email Bunny</h1>
+        </div>
+    </div>
+<!--most of the buttons that will be on the top or side, depending on view-->
+<div class="row">
+            <button type="button" class="btn btn-info col-2" id="inbox">Inbox</button>
+            <button type="button" class="btn btn-info col" id="sent">Sent</button>
+            <button type="button" class="btn btn-info col" id="saved">Saved</button>
+            <button type="button" class="btn btn-info col" id="drafts">Drafts</button>
+<!--This contains the compose button-->
+            <button type="button" class="btn btn-info col" id="compose">Compose</button>
+<!--This is the trash can button-->
+            <button type="button" class="btn btn-info col" id="trash">Trash</button>
+</div>           
+<!--This contains the search bar and search button-->
+<div id="searchBar" class="row">
+    <div class="col-5 col searchBarArea">
 <nav class="navbar bg-body-tertiary">
-    </div class="container-fluid">
 <form class="d-flex" role="search">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="search"/>
-    <button id="bunny" class="btn btn-outline-info " type="submit" style="--bs-btn-padding-y: 2%; --bs-btn-padding-x: -15%; --bs-btn-font-size: 10%;"><img src="https://i.ibb.co/WW3G3g5/bunny-icon-for-bunny-email-project.png" width="75" height="75" class="bg"alt="neon pink bunny head search logo"/></button>    
+    <button  class="btn btn-outline-info btn-info" type="submit" style="--bs-btn-padding-y: 2%; --bs-btn-padding-x: -15%; --bs-btn-font-size: 10%;"><img src="https://i.ibb.co/WW3G3g5/bunny-icon-for-bunny-email-project.png" width="750" height="75" class="img img-fluid"alt="neon pink bunny head search logo" id="bunny"/></button>    
 </form>        
-    </div>
 </nav>
-<!--This contains the button to start writing a new email-->
-    <div class="row">
-      <div>
-        <button type="button" class="btn btn-outline-info btn-lg" style="--bs-btn-padding-y: 10%; --bs-btn-padding-x: 30%;" id="composeEmail">Compose New Email</button>
-      </div>
-    </div>
-<!--This contains the list of the currently clicked on button ie:inbox -->
-<div class="row"></div>
+</div>
+<!--This contains the list of emails-->
+<div class="col d-flex">
+    <ul id="emailList" class="list-group text-break">
+        <li class="list-group-item">
+            <div class="me-auto emails1">From: user458
+                <div>kwadhjwkahjddsddsadsadsad</div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="me-auto emails2">From: user058
+                <div>kfefyjgvjgyvjs</div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="me-auto emails1">From: user089
+                <div>gopllgfhd</div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="me-auto emails2">From: user008
+                <div>kwygjygvjvjygcjygjygcjcgd</div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="me-auto emails1">From: user480
+                <div>koiiihjd</div>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+
 <div class="row">
     <div class="col">
-    <!--This contains the current email open and being read with reply, trash buttons-->
-        <textarea id="readEmail"></textarea>
-    <!--This contains the box to write emails and the send button-->
-        <textarea id="writeEmail"></textarea>
+<!--This contains the current email open and being read-->
+        <p id="readEmail" class="lead text-break">Dear Mr. Raspberry, fdsfjdsjifjidsjfiojifjief erfewfewfsdfsdaffsdf
+        </p>
+    </div>  
+    <div class="col">
+<!--This contains the box to write emails and the send button-->
+        <textarea id="writeEmail" class="textarea"></textarea>
     </div>
 </div>
     </div>

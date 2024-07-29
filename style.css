@@ -1,3 +1,79 @@
-#trash {
-    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.btn {
+    align-items: center;
+    align-content: center;
+    color: rgb(232, 51, 205);
+    text-decoration: underline rgb(232, 51, 205);
+    padding: 2px;
+    max-width: 45%;
+    max-height: 20%;
+    border: 2px solid  rgb(232, 51, 205);
+}
+
+.btn:hover {
+    background-color: rgb(232, 51, 205);
+    color: rgb(6, 228, 244);
+
+}
+
+#searchBar {
+    border: 2px solid rgb(232, 51, 205);
+    max-width: 110%;
+}
+
+#emailBunnyTitleBox {
+    align-items: center;
+    border: 2px solid rgb(232, 51, 205);
+}
+
+#emailBunnyTitle {
+    text-align-last: center;
+    color: rgb(232, 51, 205);
+    text-decoration: underline rgb(6, 228, 244);
+}
+
+.row{
+    align-items: center;
+    align-self: center;
+}
+
+.col {
+align-items: center;
+align-self: center;
+}
+
+.composeEmail{
+    color: rgb(6, 228, 244);
+    align-self: center;
+}
+
+#emailList{
+    border: 3.5px solid rgb(232, 51, 205);
+    width: 100%;
+}
+
+.emails1{
+    color: rgb(232, 51, 205);
+    background-color: rgb(6, 228, 244);
+    border: 2px solid;
+}
+
+.emails2{
+    color: rgb(6, 228, 244);
+    background-color: rgb(232, 51, 205);
+    border: 2px solid;
+}
+
+#bunny {
+    margin-left: -15%;
+    margin-top: 12px;
+    max-width: 75%;
+    max-height: 85%;
+}
+
+.row {
+    align-content: space-around;
 }
