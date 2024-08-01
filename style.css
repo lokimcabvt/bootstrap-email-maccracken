@@ -1,10 +1,16 @@
+html{
+     height: 100vh;
+    width: 100vw;       
+}
+
 body {
+    background-image: url(https://i.ibb.co/tPzhgk1/pexels-codioful-7130544.jpg);
     font-family: Verdana, sans-serif;
+    background-position: 100%;
+    background-repeat: repeat;
 }
 
 .btn {
-    align-items: center;
-    align-content: center;
     color: rgb(232, 51, 205);
     text-decoration: underline rgb(232, 51, 205);
     padding: 2px;
@@ -16,17 +22,25 @@ body {
 .btn:hover {
     background-color: rgb(232, 51, 205);
     color: rgb(6, 228, 244);
+}
+
+.btn:focus{
+   color: blueviolet;
+}
+
+#searchBarContainer {
+    border: 4px double rgb(232, 51, 205);
 
 }
 
-#searchBar {
-    border: 2px solid rgb(232, 51, 205);
-    max-width: 110%;
+.searchBarArea{
+   height: 25px;
+   width: 34px;
 }
 
 #emailBunnyTitleBox {
     align-items: center;
-    border: 2px solid rgb(232, 51, 205);
+    border: 4px double rgb(232, 51, 205);
 }
 
 #emailBunnyTitle {
@@ -35,24 +49,40 @@ body {
     text-decoration: underline rgb(6, 228, 244);
 }
 
-.row{
-    align-items: center;
-    align-self: center;
+#writeEmail{
+  border: 4px double rgb(232, 51, 205);
+  background-color: rgb(6, 228, 244);
+  color: rgb(232, 51, 205);
+  height: 25vh;
+  width: 35vw;
 }
 
-.col {
-align-items: center;
-align-self: center;
+#writeEmail:hover{
+    background-color: aliceblue;
+    color:black; 
 }
 
-.composeEmail{
+#writeEmail:focus{
+  outline-color:blueviolet;
+}
+
+#readEmail{
+    border: 4px double rgb(6, 228, 244);
+    background-color: rgb(232, 51, 205);
     color: rgb(6, 228, 244);
-    align-self: center;
+}
+
+#readEmail:hover{
+    background-color: aliceblue;
+    color:black;
+}
+
+#reply{
+    align-self: flex-end;
 }
 
 #emailList{
-    border: 3.5px solid rgb(232, 51, 205);
-    width: 100%;
+    border: 4px double rgb(6, 228, 244);
 }
 
 .emails1{
@@ -67,6 +97,10 @@ align-self: center;
     border: 2px solid;
 }
 
+.checkbox{
+    accent-color: blueviolet;
+}
+
 #bunny {
     margin-left: -15%;
     margin-top: 12px;
@@ -74,6 +108,3 @@ align-self: center;
     max-height: 85%;
 }
 
-.row {
-    align-content: space-around;
-}
