@@ -10,65 +10,83 @@
         <title>My email project-Email Bunny-L.M.</title>
     </head>
 <body>
-    <div class="container container-fluid" id="mainContainer">
+<div class="container container-fluid container-sm" id="mainContainer">
 <!--name of the email "Company"-->
-<div class="container container-fluid">
+<div class="container container-fluid container-sm">
         <div class="row">
              <div class="d-flex" aria-hidden="true">
-                <div class="col col-12 justify-conent-center align-items-center" id="emailBunnyTitleBox">
+                <div class="col col-12 align-items-center" id="emailBunnyTitleBox">
                      <h1 id="emailBunnyTitle"><img src="https://i.ibb.co/WW3G3g5/bunny-icon-for-bunny-email-project.png" width="20%" height="10%" class="img"alt="neon pink bunny head search logo" id="bunny"/>Email Bunny</h1>
                  </div>
-            </div>
+             </div>
         </div>   
 </div>       
 <!--most of the buttons that will be on the top or side, depending on view-->
-<div class="container container-fluid d-flex text-break">
-        <div class="row d-flex">
-                <button type="button" class="btn col btn-info" id="inbox">Inbox</button>
-                <button type="button" class="btn col btn-info" id="sent">Sent</button>
-                <button type="button" class="btn col btn-info" id="saved">Saved</button>
-                <button type="button" class="btn col btn-info" id="drafts">Drafts</button>
-                <button type="button" class="btn col btn-info" id="compose">Compose</button>
-                <button type="button" class="btn col btn-info" id="trash">Trash</button>
+<div class="container row container-fluid d-flex" id="mainButtons">
+        <div class="column-gap-1 d-flex col text-break justify-content-center" aria-label="main toolbar">
+                <button type="button" class="btn col-2 btn-info" id="inbox">Inbox</button>
+                <button type="button" class="btn col-2 btn-info" id="sent">Sent</button>
+                <button type="button" class="btn col-2 btn-info" id="saved">Saved</button>
+                <button type="button" class="btn col-2 btn-info" id="drafts">Drafts</button>
+                <button type="button" class="btn col-2 btn-info" id="compose">Compose</button>
+                <button type="button" class="btn col-2 btn-info" id="trash">Trash</button>
         </div>  
 </div>       
-<!--This contains the search bar and search button-->
-<div class="container">
-    <div id="searchBar" class="row d-flex">
-        <div class="col d-flex" id="searchBarContainer">
-<nav class="navbar d-flex" id="searchBarArea">
+<!--This contains the search bar and reply button-->
+<div class="container d-flex justify-content-center align-items-center">
+    <div id="searchBar" class="d-flex col-12">
+        <div class="col column-gap-5 d-flex" id="searchBarTrashContainer">
+<nav class="navbar d-flex col-6" id="searchBarArea">
 <form class="d-flex form-control" role="search">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="search"/>
-    <button  class="btn d-flex btn-outline-info btn-info fw-bold align-items-center" type="submit">Search</button>    
+    <button  class="btn d-flex btn-outline-info btn-info fw-bold" type="submit">Search</button>    
 </form>        
 </nav>
+  <!--This contains the reply button and modal email form-->
+<button type="button" class="d-flex btn btn-info col text-break justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@you" id="reply">Reply</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New Email</h1>
+          <button type="button" class="btn-close btn" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label" id="recipient">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label" id="msg">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-info" data-bs-dismiss="modal" id="close">Close</button>
+          <button type="button" class="btn btn-primary btn-info" id="sendMsg">Send message</button>
+        </div>
+      </div>
     </div>
-</div>    
-<!--This contains the email open and being read-->
-<div class="container col-lg-4">
-    <div class="row">
-        <div class="col col-lg-6">
-            <p id="readEmail" class="lead text-break d-flex col">Dear Mr. Raspberry, fdsfjdsjifjidsjfiojifjief erfewfewfsdfsdaffsdf
-            </p>
-            <button type="button" class="d-flex btn btn-info col" id="reply">Reply</button>
-        </div>  
+  </div>
+         </div>
     </div>
-</div>
+</div> 
 <!--This contains the list of emails-->
 <div class="container container-fluid">
     <div class="row d-flex">
-        <div class="col d-flex col-lg-5">
+        <div class="col d-flex col-12">
             <ul id="emailList" class="list-group text-break">
                  <li class="list-group-item">
             <div class="me-auto emails1">From: User458
-                <div>kwadhjwkahjddsddsadsadsad</div>
+                <div>kwadhjwkahjddsddsadsadsadgggggggggggggggggggggggggggggggggggllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</div>
                     <input class="checkbox" type="checkbox" />
             </div>
         </li>
         <li class="list-group-item">
             <div class="me-auto emails2">From: User058
-                <div>pfefyjgvjgyvjs</div>
+                <div>pfefyjgvj555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555gyvjs</div>
                 <input class="checkbox" type="checkbox" checked/>
             </div>
         </li>
@@ -94,13 +112,13 @@
         </div>
     </div>
 </div>
-<!--Email reply writing area-->
-    <div class="container container-fluid">
-    <div class="row row-">
-     <div class="col col-lg-2">
-        <textarea id="writeEmail" class="textarea"></textarea>
-    </div>
-    </div>
+<!--This contains the email open and being read-->
+<div class="container container-fluid d-flex">
+    <div class="row d-flex">
+        <div class="col d-flex">
+            <p id="readEmail" class="text-break d-flex col">Dear Mr. Raspberry, fdsfjdsjifjidsjfiofffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffgfddgfdgfdgfdgfdgjifjief erfewfewfsdfsdaffsdf.     THkskosKofks kfasfkslokffkffdsa dfsfdsfsd!! 
+            </p>
+        </div>  
     </div>
 </div>
 <!--links java script doc to this html doc-->

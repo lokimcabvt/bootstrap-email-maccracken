@@ -3,44 +3,54 @@ html{
     width: 100vw;       
 }
 
-body {
+body{
     background-image: url(https://i.ibb.co/tPzhgk1/pexels-codioful-7130544.jpg);
     font-family: Verdana, sans-serif;
     background-position: 100%;
     background-repeat: repeat;
+    height:100vh ;
+    width: 100vw;
+}
+
+#mainButtons{
+    border: 4px double rgb(6, 228, 244);
+    margin-left: 1px;
 }
 
 .btn {
     color: rgb(232, 51, 205);
     text-decoration: underline rgb(232, 51, 205);
     padding: 2px;
-    max-width: 45%;
-    max-height: 20%;
-    border: 2px solid  rgb(232, 51, 205);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 3px double  rgb(232, 51, 205);
 }
 
 .btn:hover {
     background-color: rgb(232, 51, 205);
     color: rgb(6, 228, 244);
+    text-decoration: underline rgb(6, 228, 244);
 }
 
 .btn:focus{
    color: blueviolet;
 }
 
-#searchBarContainer {
-    border: 4px double rgb(232, 51, 205);
-
+::placeholder{
+    color: rgb(232, 51, 205);
+    text-decoration: underline rgb(232, 51, 205);
 }
 
-.searchBarArea{
-   height: 25px;
-   width: 34px;
+#searchBarTrashContainer {
+    display: flex;
+    border: 4px double rgb(232, 51, 205);
+    align-items: baseline;
+    padding: 5px;
 }
 
 #emailBunnyTitleBox {
     align-items: center;
-    border: 4px double rgb(232, 51, 205);
+    border: 10px double rgb(232, 51, 205);
 }
 
 #emailBunnyTitle {
@@ -53,8 +63,7 @@ body {
   border: 4px double rgb(232, 51, 205);
   background-color: rgb(6, 228, 244);
   color: rgb(232, 51, 205);
-  height: 25vh;
-  width: 35vw;
+ 
 }
 
 #writeEmail:hover{
@@ -77,10 +86,6 @@ body {
     color:black;
 }
 
-#reply{
-    align-self: flex-end;
-}
-
 #emailList{
     border: 4px double rgb(6, 228, 244);
 }
@@ -88,23 +93,28 @@ body {
 .emails1{
     color: rgb(232, 51, 205);
     background-color: rgb(6, 228, 244);
-    border: 2px solid;
+    border: 3px double;
 }
 
 .emails2{
     color: rgb(6, 228, 244);
     background-color: rgb(232, 51, 205);
-    border: 2px solid;
+    border: 3px double;
 }
 
 .checkbox{
     accent-color: blueviolet;
 }
 
-#bunny {
-    margin-left: -15%;
-    margin-top: 12px;
-    max-width: 75%;
-    max-height: 85%;
+#close{
+    border: 4px double rgb(6, 228, 244);
+    margin-left: 1px;
+    border: 3px double;
+}
+
+#exampleModalLabel, #msg, #recipient{ 
+    color: rgb(232, 51, 205);
+    text-decoration: 4px underline;
+    text-decoration-color: rgb(6, 228, 244);
 }
 
