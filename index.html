@@ -11,18 +11,18 @@
     </head>
 <body>
 <div class="container container-fluid container-sm" id="mainContainer">
-<!--name of the email "Company"-->
-<div class="container container-fluid container-sm">
+<!--name of the email page-->
+<div class="container container-fluid">
         <div class="row">
              <div class="d-flex" aria-hidden="true">
-                <div class="col col-12 align-items-center" id="emailBunnyTitleBox">
-                     <h1 id="emailBunnyTitle"><img src="https://i.ibb.co/WW3G3g5/bunny-icon-for-bunny-email-project.png" width="20%" height="10%" class="img"alt="neon pink bunny head search logo" id="bunny"/>Email Bunny</h1>
+                <div class="col col-12 align-items-center justify-content-center" id="emailBunnyTitleBox">
+                     <h1 id="emailBunnyTitle"><img src="https://i.ibb.co/WW3G3g5/bunny-icon-for-bunny-email-project.png" width="10%" height="2%" class="img"alt="neon pink bunny head search logo" id="bunny"/>Email Bunny</h1>
                  </div>
              </div>
         </div>   
 </div>       
 <!--most of the buttons that will be on the top or side, depending on view-->
-<div class="container row container-fluid d-flex" id="mainButtons">
+<div class="container container-fluid d-flex" id="mainButtons">
         <div class="column-gap-1 d-flex col text-break justify-content-center" aria-label="main toolbar">
                 <button type="button" class="btn col-2 btn-info" id="inbox">Inbox</button>
                 <button type="button" class="btn col-2 btn-info" id="sent">Sent</button>
@@ -48,8 +48,8 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">New Email</h1>
-          <button type="button" class="btn-close btn" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5" id="emailModal">New Email</h1>
+          <button type="button" class="btn-close btn d-flex btn-info" data-bs-dismiss="modal" aria-label="Close" id="x"></button>
         </div>
         <div class="modal-body">
           <form>
@@ -58,13 +58,13 @@
               <input type="text" class="form-control" id="recipient-name">
             </div>
             <div class="mb-3">
-              <label for="message-text" class="col-form-label" id="msg">Message:</label>
+              <label for="message-text" class="col-form-label" id="msg">Email:</label>
               <textarea class="form-control" id="message-text"></textarea>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-info" data-bs-dismiss="modal" id="close">Close</button>
+          <button type="button" class="btn btn-secondary btn-info" data-bs-dismiss="modal" id="close1">Close</button>
           <button type="button" class="btn btn-primary btn-info" id="sendMsg">Send message</button>
         </div>
       </div>
@@ -76,7 +76,7 @@
 <!--This contains the list of emails-->
 <div class="container container-fluid">
     <div class="row d-flex">
-        <div class="col d-flex col-12">
+        <div class="col d-flex col-lg-12">
             <ul id="emailList" class="list-group text-break">
                  <li class="list-group-item">
             <div class="me-auto emails1">From: User458

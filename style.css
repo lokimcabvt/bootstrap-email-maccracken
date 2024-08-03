@@ -14,7 +14,7 @@ body{
 
 #mainButtons{
     border: 4px double rgb(6, 228, 244);
-    margin-left: 1px;
+    width: 90%;
 }
 
 .btn {
@@ -37,7 +37,6 @@ body{
 }
 
 ::placeholder{
-    color: rgb(232, 51, 205);
     text-decoration: underline rgb(232, 51, 205);
 }
 
@@ -112,7 +111,12 @@ body{
     border: 3px double;
 }
 
-#exampleModalLabel, #msg, #recipient{ 
+#x{
+ border: 4px double rgb(6, 228, 244); 
+background-color: rgb(232, 51, 205);
+}
+
+#emailModal, #msg, #recipient{ 
     color: rgb(232, 51, 205);
     text-decoration: 4px underline;
     text-decoration-color: rgb(6, 228, 244);
