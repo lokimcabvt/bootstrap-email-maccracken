@@ -50,6 +50,7 @@ body{
 #emailBunnyTitleBox {
     align-items: center;
     border: 10px double rgb(232, 51, 205);
+    border-radius: 250%;
 }
 
 #emailBunnyTitle {
@@ -78,11 +79,13 @@ body{
     border: 4px double rgb(6, 228, 244);
     background-color: rgb(232, 51, 205);
     color: rgb(6, 228, 244);
+    text-decoration: 1.5px underline blueviolet;
 }
 
 #readEmail:hover{
     background-color: aliceblue;
     color:black;
+    text-decoration: 1.5px underline black;
 }
 
 #emailList{
@@ -93,12 +96,26 @@ body{
     color: rgb(232, 51, 205);
     background-color: rgb(6, 228, 244);
     border: 3px double;
+    text-decoration: 1.5px underline blueviolet;
 }
 
 .emails2{
     color: rgb(6, 228, 244);
     background-color: rgb(232, 51, 205);
     border: 3px double;
+    text-decoration: 1.5px underline blueviolet;
+}
+
+.emails1:hover{
+    background-color: aliceblue;
+    color:black;
+    text-decoration: 1.5px underline black;  
+}
+
+.emails2:hover{
+    background-color: aliceblue;
+    color:black;
+    text-decoration: 1.5px underline black;  
 }
 
 .checkbox{
