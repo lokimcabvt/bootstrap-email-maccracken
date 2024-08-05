@@ -30,6 +30,7 @@ body{
     background-color: rgb(232, 51, 205);
     color: rgb(6, 228, 244);
     text-decoration: underline rgb(6, 228, 244);
+    transition-delay: 100ms;
 }
 
 .btn:focus{
@@ -37,7 +38,7 @@ body{
 }
 
 ::placeholder{
-    text-decoration: underline rgb(232, 51, 205);
+    text-decoration: underline rgb(6, 228, 244);
 }
 
 #searchBarTrashContainer {
@@ -59,22 +60,6 @@ body{
     text-decoration: underline rgb(6, 228, 244);
 }
 
-#writeEmail{
-  border: 4px double rgb(232, 51, 205);
-  background-color: rgb(6, 228, 244);
-  color: rgb(232, 51, 205);
- 
-}
-
-#writeEmail:hover{
-    background-color: aliceblue;
-    color:black; 
-}
-
-#writeEmail:focus{
-  outline-color:blueviolet;
-}
-
 #readEmail{
     border: 4px double rgb(6, 228, 244);
     background-color: rgb(232, 51, 205);
@@ -86,6 +71,7 @@ body{
     background-color: aliceblue;
     color:black;
     text-decoration: 1.5px underline black;
+    transition-delay: 200ms;
 }
 
 #emailList{
@@ -110,12 +96,14 @@ body{
     background-color: aliceblue;
     color:black;
     text-decoration: 1.5px underline black;  
+    transition-delay: 175ms;
 }
 
 .emails2:hover{
     background-color: aliceblue;
     color:black;
     text-decoration: 1.5px underline black;  
+    transition-delay: 175ms;
 }
 
 .checkbox{
