@@ -15,6 +15,9 @@ body{
 #mainButtons{
     border: 4px double rgb(6, 228, 244);
     width: 90%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: auto auto 1em auto;
 }
 
 .btn {
@@ -46,6 +49,7 @@ body{
     border: 4px double rgb(232, 51, 205);
     align-items: baseline;
     padding: 5px;
+    margin-bottom: 1em;
 }
 
 #emailBunnyTitleBox {
@@ -58,6 +62,11 @@ body{
     text-align-last: center;
     color: rgb(232, 51, 205);
     text-decoration: underline rgb(6, 228, 244);
+}
+
+#titleCon{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #readEmail{
@@ -76,6 +85,7 @@ body{
 
 #emailList{
     border: 4px double rgb(6, 228, 244);
+    margin-bottom: 1em;
 }
 
 .emails1{
