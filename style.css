@@ -44,6 +44,27 @@ body{
     text-decoration: underline rgb(6, 228, 244);
 }
 
+#savedList{
+    background-color: rgb(232, 51, 205);
+    color: rgb(6, 228, 244);
+   -webkit-text-fill-color: rgb(6, 228, 244);
+    text-decoration: underline;
+}
+
+#readLater:hover{
+    text-decoration: underline blueviolet;
+    transition-delay: 200ms;
+    -webkit-text-fill-color: blueviolet;
+    background-color: rgb(6, 228, 244);
+}
+
+#archive:hover{
+    text-decoration: underline blueviolet;
+    transition-delay: 200ms;
+    -webkit-text-fill-color: blueviolet;
+    background-color: rgb(6, 228, 244);
+}
+
 #searchBarTrashContainer {
     display: flex;
     border: 4px double rgb(232, 51, 205);
@@ -136,4 +157,5 @@ background-color: rgb(232, 51, 205);
     text-decoration: 4px underline;
     text-decoration-color: rgb(6, 228, 244);
 }
+
 

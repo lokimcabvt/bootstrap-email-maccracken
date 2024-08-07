@@ -16,17 +16,23 @@
         <div class="row">
              <div class="d-flex" aria-hidden="true">
                 <div class="col col-12 align-items-center justify-content-center" id="emailBunnyTitleBox">
-                     <h1 id="emailBunnyTitle"><img src="https://i.ibb.co/WW3G3g5/bunny-icon-for-bunny-email-project.png" width="10%" height="2%" class="img"alt="neon pink bunny head search logo" id="bunny"/>Email Bunny</h1>
+                     <h1 id="emailBunnyTitle"><img src="https://i.ibb.co/WW3G3g5/bunny-icon-for-bunny-email-project.png" width="10%" height="2%" class="img" alt="neon pink bunny head search logo" id="bunny"/>Email Bunny</h1>
                  </div>
              </div>
         </div>   
 </div>       
 <!--most of the buttons that will be on the top or side, depending on view-->
-<div class="container container-fluid d-flex" id="mainButtons">
-        <div class="column-gap-1 d-flex col text-break justify-content-center" aria-label="main toolbar">
+<div class="container container-fluid d-flex" id="mainButtons" role="group" aria-label="Main button group with nested dropdown save">
+        <div class="column-gap-1 d-flex col text-break justify-content-center btn-group" aria-label="main toolbar">
                 <button type="button" class="btn col-2 btn-info" id="inbox">Inbox</button>
                 <button type="button" class="btn col-2 btn-info" id="sent">Sent</button>
-                <button type="button" class="btn col-2 btn-info" id="saved">Saved</button>
+        <div class="column-gap-1 d-flex col-2 text-break justify-content-center btn-group dropdown text-break" id="dropdown">
+                <button type="button" class="btn col-2 btn-info" data-bs-toggle="dropdown" id="saved">Saved</button>
+                    <ul class="dropdown-menu" id="savedList">
+                        <li><a class="dropdown-item" href="#" Id="archive">Archive</a><li>
+                        <li><a class="dropdown-item" href="#" id="readLater">Read Later</a></li>
+                    </ul>
+        </div>        
                 <button type="button" class="btn col-2 btn-info" id="drafts">Drafts</button>
                 <button type="button" class="btn col-2 btn-info" id="compose">Compose</button>
                 <button type="button" class="btn col-2 btn-info" id="trash">Trash</button>
@@ -45,7 +51,8 @@
   <!--This contains the reply button and modal email form-->
 <button type="button" class="d-flex btn btn-info col text-break justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@you" id="reply">Reply</button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<!-- the modal-dialog-centered is what centers the email modal-->
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="emailModal">New Email</h1>
