@@ -22,34 +22,34 @@
         </div>   
 </div>       
 <!--most of the buttons that will be on the top-->
-<div class="container container-fluid d-flex" id="mainButtons" role="group" aria-label="Main button group with nested dropdown save">
-        <div class="column-gap-1 d-flex col text-break justify-content-center btn-group" aria-label="main toolbar">
-                <button type="button" class="btn col-2 btn-info" id="inbox">Inbox</button>
-                <button type="button" class="btn col-2 btn-info" id="sent">Sent</button>
-        <div class="column-gap-1 d-flex col-2 text-break justify-content-center btn-group dropdown text-break" id="dropdown">
-                <button type="button" class="btn col-2 btn-info" data-bs-toggle="dropdown" id="saved">Saved</button>
+<div class="container col container-fluid col-md-3 col-lg-12 col-sm-12 mb-sm-1 row" id="mainButtons" role="group" aria-label="Main button group with nested dropdown save">
+        <div class="column-gap-1 d-flex col text-break justify-content-center btn-group" id="mainButtonsToolbar" aria-label="main toolbar">
+                <button type="button" class="btn col-lg-2 col-md-12 col-sm-2 mb-md-4 mt-md-4 btn-info" id="inbox">Inbox</button>
+                <button type="button" class="btn col-lg-2 col-md-12 col-sm-2 mb-md-4 mt-md-4 btn-info" id="sent">Sent</button>
+        <div class="btn-group dropdown col-lg-2 col-md-12 col-sm-2" id="dropdown">
+                <button type="button" class="btn col-lg-2 col-md-12 col-sm-2 mb-md-4 mt-md-4 btn-info" data-bs-toggle="dropdown" id="saved">Saved</button>
                     <ul class="dropdown-menu" id="savedList">
                         <li><a class="dropdown-item" href="#" Id="archive">Archive</a><li>
                         <li><a class="dropdown-item" href="#" id="readLater">Read Later</a></li>
                     </ul>
         </div>        
-                <button type="button" class="btn col-2 btn-info" id="drafts">Drafts</button>
-                <button type="button" class="btn col-2 btn-info" id="compose">Compose</button>
-                <button type="button" class="btn col-2 btn-info" id="trash">Trash</button>
+                <button type="button" class="btn col-lg-2 col-md-12 col-sm-2 mb-md-4 mt-md-4 btn-info" id="drafts">Drafts</button>
+                <button type="button" class="btn col-lg-2 col-md-12  col-sm-2 mt-md-4 btn-info" id="compose">Compose</button>
+                <button type="button" class="btn col-lg-2 col-md-12 col-sm-2 mb-md-4 mt-md-4 btn-info" id="trash">Trash</button>
         </div>  
 </div>       
 <!--This contains the search bar and reply button-->
-<div class="container d-flex justify-content-center align-items-center">
+<div class="container col-md-3 col-sm-12">
     <div id="searchBar" class="d-flex col-12">
-        <div class="col column-gap-5 d-flex" id="searchBarTrashContainer">
-<nav class="navbar d-flex col-6" id="searchBarArea">
+        <div class="col column-gap-5 d-flex " id="searchBarReplyContainer">
+<nav class="navbar d-flex col-lg-6 col-md-12 col-sm-6" id="searchBarArea">
 <form class="d-flex form-control" role="search">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="search"/>
     <button  class="btn d-flex btn-outline-info btn-info fw-bold" type="submit">Search</button>    
 </form>        
 </nav>
   <!--This contains the reply button and modal email form-->
-<button type="button" class="d-flex btn btn-info col text-break justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@you" id="reply">Reply</button>
+<button type="button" class="d-flex btn btn-info col col-lg-6 col-md-12 col-sm-6 text-break justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@you" id="reply">Reply</button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <!-- the modal-dialog-centered is what centers the email modal-->
     <div class="modal-dialog modal-dialog-centered">

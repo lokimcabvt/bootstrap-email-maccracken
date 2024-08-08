@@ -14,10 +14,10 @@ body{
 
 #mainButtons{
     border: 4px double rgb(6, 228, 244);
-    width: 90%;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: auto auto 1em auto;
+}
+
+#mainButtonsToolbar{
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -27,7 +27,9 @@ body{
     margin-top: 5px;
     margin-bottom: 5px;
     border: 3px double  rgb(232, 51, 205);
+   flex-wrap: wrap;
 }
+
 
 .btn:hover {
     background-color: rgb(232, 51, 205);
@@ -46,32 +48,53 @@ body{
 
 #savedList{
     background-color: rgb(232, 51, 205);
+
+}
+
+#saved:focus{
+    border-color: rgb(232, 51, 205);
+}
+
+#saved:focus:hover{
+border-color: rgb(6, 228, 244);
+}
+
+#archive{
     color: rgb(6, 228, 244);
-   -webkit-text-fill-color: rgb(6, 228, 244);
     text-decoration: underline;
+    text-decoration-color: rgb(6, 228, 244);
+}
+
+#readLater{
+    color: rgb(6, 228, 244);
+    text-decoration: underline;
+    text-decoration-color: rgb(6, 228, 244);
 }
 
 #readLater:hover{
-    text-decoration: underline blueviolet;
-    transition-delay: 200ms;
-    -webkit-text-fill-color: blueviolet;
     background-color: rgb(6, 228, 244);
+    color: blueviolet;
+    text-decoration-color: blueviolet;
+    transition-delay: 200ms;
 }
 
 #archive:hover{
-    text-decoration: underline blueviolet;
-    transition-delay: 200ms;
-    -webkit-text-fill-color: blueviolet;
     background-color: rgb(6, 228, 244);
+    color: blueviolet;
+    text-decoration-color: blueviolet;
+    transition-delay: 200ms;
 }
 
-#searchBarTrashContainer {
+#searchBarReplyContainer {
     display: flex;
     border: 4px double rgb(232, 51, 205);
     align-items: baseline;
     padding: 5px;
     margin-bottom: 1em;
+    flex-wrap: wrap;
+    margin-top: 1em;
 }
+
 
 #emailBunnyTitleBox {
     align-items: center;
