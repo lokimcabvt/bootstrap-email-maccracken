@@ -18,8 +18,10 @@ width: 100vw;
 }
 
 #col1{
-    background-color: rgb(55, 174, 233);
+    background-color: rgb(6, 228, 244);
     display: flex;
+    border: 3px double rgb(170, 93, 203);
+    border-radius: 15%;
 }
 
 
@@ -62,7 +64,5 @@ width: 100vw;
 
  #hamButton{
     display: flex;
-    align-self: flex-start;
-    max-height: 100vh;
+    align-self: start;
  }
-
