@@ -9,6 +9,12 @@ height: 100vh;
 width: 100vw;
 }
 
+#mainContainer{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
 .name{
     display: flex;
     justify-content: center;
@@ -22,16 +28,32 @@ width: 100vw;
     display: flex;
     border: 3px double rgb(170, 93, 203);
     border-radius: 15%;
+    max-height: 650px;
 }
 
+#col1:hover{
+    background-color: white;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.navbar-toggler-icon:active {
+    outline: none;
+    box-shadow: none;
+    border: transparent;
+    border: none;
+}
 
 #col2{
     background-color: rgb(232, 51, 205);
+    height: fit-content;
 }
 
 #col3{
     background-color: rgb(170, 93, 203);
     border: rgb(211, 28, 183) double 4px;
+    height: fit-content;
 }
 
 .btn{
@@ -53,16 +75,60 @@ width: 100vw;
 
  #inbox, #sent, #saved, #compose, #trash, #reply {
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    justify-content: center;
+    margin-bottom: 1em;
+    margin-right: 2em;
+ }
+
+ #readEmail{
+    color: rgb(6, 228, 244);
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+ }
+
+ #readEmail:hover{
+    color: black;
+    transition-delay: 100ms;
  }
 
  .checkbox{
     accent-color: blueviolet;
  }
 
+ .emails1{
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    color: rgb(211, 28, 183);
+    background-color: transparent;
+    margin-top: 1em;
+ }
+
+.emails2{
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    color: rgb(232, 51, 205);
+    background-color: transparent;
+}
+
+.emails1:hover{
+    color: black;
+}
+
+.emails2:hover{
+    color: black;
+}
+
  #hamButton{
     display: flex;
     align-self: start;
  }
+
+#x{
+ border: 4px double rgb(6, 228, 244); 
+background-color: rgb(232, 51, 205);
+transition-delay: 100ms;
+}
+
+#newEmail, #recipient, #text{
+    text-decoration: underline rgb(170, 93, 203);
+    color: rgb(4, 151, 161);
+}
