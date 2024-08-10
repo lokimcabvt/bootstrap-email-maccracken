@@ -1,35 +1,42 @@
-html{
-     height: 100vh;
-    width: 100vw;       
-}
-
-body{
-    background-image: url(https://i.ibb.co/tPzhgk1/pexels-codioful-7130544.jpg);
-    font-family: Verdana, sans-serif;
-    background-position: 100%;
-    background-repeat: repeat;
-    height:100vh ;
+.html{
+    height: 100vh;
     width: 100vw;
 }
 
-#mainButtons{
+.body{
+display: flex;
+height: 100vh;
+width: 100vw;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
     border: 4px double rgb(6, 228, 244);
+    text-decoration: underline;
+    text-decoration-color: rgb(170, 93, 203);
 }
 
-#mainButtonsToolbar{
-    flex-wrap: wrap;
+#col1{
+    background-color: rgb(55, 174, 233);
+    display: flex;
 }
 
-.btn {
+
+#col2{
+    background-color: rgb(232, 51, 205);
+}
+
+#col3{
+    background-color: rgb(170, 93, 203);
+    border: rgb(211, 28, 183) double 4px;
+}
+
+.btn{
     color: rgb(232, 51, 205);
     text-decoration: underline rgb(232, 51, 205);
-    padding: 2px;
-    margin-top: 5px;
-    margin-bottom: 5px;
     border: 3px double  rgb(232, 51, 205);
-   flex-wrap: wrap;
 }
-
 
 .btn:hover {
     background-color: rgb(232, 51, 205);
@@ -39,146 +46,23 @@ body{
 }
 
 .btn:focus{
-   color: blueviolet;
-}
-
-::placeholder{
-    text-decoration: underline rgb(6, 228, 244);
-}
-
-#savedList{
-    background-color: rgb(232, 51, 205);
-
-}
-
-#saved:focus{
-    border-color: rgb(232, 51, 205);
-}
-
-#saved:focus:hover{
-border-color: rgb(6, 228, 244);
-}
-
-#archive{
-    color: rgb(6, 228, 244);
-    text-decoration: underline;
-    text-decoration-color: rgb(6, 228, 244);
-}
-
-#readLater{
-    color: rgb(6, 228, 244);
-    text-decoration: underline;
-    text-decoration-color: rgb(6, 228, 244);
-}
-
-#readLater:hover{
-    background-color: rgb(6, 228, 244);
     color: blueviolet;
-    text-decoration-color: blueviolet;
-    transition-delay: 200ms;
-}
+ }
 
-#archive:hover{
-    background-color: rgb(6, 228, 244);
-    color: blueviolet;
-    text-decoration-color: blueviolet;
-    transition-delay: 200ms;
-}
-
-#searchBarReplyContainer {
+ #inbox, #sent, #saved, #compose, #trash, #reply {
     display: flex;
-    border: 4px double rgb(232, 51, 205);
-    align-items: baseline;
-    padding: 5px;
-    margin-bottom: 1em;
-    flex-wrap: wrap;
-    margin-top: 1em;
-}
+    margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+ }
 
-
-#emailBunnyTitleBox {
-    align-items: center;
-    border: 10px double rgb(232, 51, 205);
-    border-radius: 250%;
-}
-
-#emailBunnyTitle {
-    text-align-last: center;
-    color: rgb(232, 51, 205);
-    text-decoration: underline rgb(6, 228, 244);
-}
-
-#titleCon{
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-#readEmail{
-    border: 4px double rgb(6, 228, 244);
-    background-color: rgb(232, 51, 205);
-    color: rgb(6, 228, 244);
-    text-decoration: 1.5px underline blueviolet;
-}
-
-#readEmail:hover{
-    background-color: aliceblue;
-    color:black;
-    text-decoration: 1.5px underline black;
-    transition-delay: 200ms;
-}
-
-#emailList{
-    border: 4px double rgb(6, 228, 244);
-    margin-bottom: 1em;
-}
-
-.emails1{
-    color: rgb(232, 51, 205);
-    background-color: rgb(6, 228, 244);
-    border: 3px double;
-    text-decoration: 1.5px underline blueviolet;
-}
-
-.emails2{
-    color: rgb(6, 228, 244);
-    background-color: rgb(232, 51, 205);
-    border: 3px double;
-    text-decoration: 1.5px underline blueviolet;
-}
-
-.emails1:hover{
-    background-color: aliceblue;
-    color:black;
-    text-decoration: 1.5px underline black;  
-    transition-delay: 175ms;
-}
-
-.emails2:hover{
-    background-color: aliceblue;
-    color:black;
-    text-decoration: 1.5px underline black;  
-    transition-delay: 175ms;
-}
-
-.checkbox{
+ .checkbox{
     accent-color: blueviolet;
-}
+ }
 
-#close{
-    border: 4px double rgb(6, 228, 244);
-    margin-left: 1px;
-    border: 3px double;
-}
-
-#x{
- border: 4px double rgb(6, 228, 244); 
-background-color: rgb(232, 51, 205);
-}
-
-#emailModal, #msg, #recipient{ 
-    color: rgb(232, 51, 205);
-    text-decoration: 4px underline;
-    text-decoration-color: rgb(6, 228, 244);
-}
-
+ #hamButton{
+    display: flex;
+    align-self: flex-start;
+    max-height: 100vh;
+ }
 
