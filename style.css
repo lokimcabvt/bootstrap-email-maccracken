@@ -1,38 +1,40 @@
-.html{
-    height: 100vh;
-    width: 100vw;
+html{
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
-.body{
-display: flex;
-height: 100vh;
-width: 100vw;
+body{
+    background-image: url(https://i.ibb.co/tPzhgk1/pexels-codioful-7130544.jpg);
+    background-repeat: round;
 }
 
 #mainContainer{
     display: flex;
-    height: 100vh;
-    width: 100vw;
+   justify-content: center;
 }
 
 .name{
     display: flex;
     justify-content: center;
     border: 4px double rgb(6, 228, 244);
+    border-radius: 100%;
     text-decoration: underline;
     text-decoration-color: rgb(170, 93, 203);
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #col1{
-    background-color: rgb(6, 228, 244);
+    background-color: rgb(170, 93, 203);
     display: flex;
-    border: 3px double rgb(170, 93, 203);
+    border: 3px double rgb(6, 228, 244);
     border-radius: 15%;
     max-height: 650px;
 }
 
 #col1:hover{
-    background-color: white;
+    background-color: transparent;
+    transition-delay: 200ms;
 }
 
 .navbar-toggler:focus,
@@ -54,6 +56,11 @@ width: 100vw;
     background-color: rgb(170, 93, 203);
     border: rgb(211, 28, 183) double 4px;
     height: fit-content;
+}
+
+#col3:hover{
+    background-color: rgb(211, 28, 183);
+    border-color: rgb(6, 228, 244);
 }
 
 .btn{
@@ -85,16 +92,26 @@ width: 100vw;
     text-decoration-color: blueviolet;
  }
 
- #readEmail:hover{
-    color: black;
-    transition-delay: 100ms;
- }
+ .card-title{
+    color: rgb(6, 228, 244);
+    text-decoration: underline blueviolet;
+}
 
- .checkbox{
+.bi{
+    fill: aqua;
+}
+
+.card-title:hover, #readEmail:hover, .bi:hover{
+    color: black;
+    text-decoration: underline black;
+    fill: black;
+}
+
+.checkbox{
     accent-color: blueviolet;
  }
 
- .emails1{
+.emails1{
     text-decoration: underline;
     text-decoration-color: blueviolet;
     color: rgb(211, 28, 183);
@@ -117,7 +134,7 @@ width: 100vw;
     color: black;
 }
 
- #hamButton{
+#hamButton{
     display: flex;
     align-self: start;
  }
@@ -131,4 +148,19 @@ transition-delay: 100ms;
 #newEmail, #recipient, #text{
     text-decoration: underline rgb(170, 93, 203);
     color: rgb(4, 151, 161);
+}
+
+#footer{
+    color: blueviolet;
+    text-decoration: underline aqua;
+  display: flex;  
+justify-content: center;
+position: relative;
+margin-top: 5em;
+padding-top: 2em;
+}
+
+#footer:hover{
+color: black;
+text-decoration: underline blueviolet;
 }
